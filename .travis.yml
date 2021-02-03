@@ -1,6 +1,12 @@
 language: node_js
-node_js:
-  - "6"
+nodejs: 
+    - 10
+    - node  #latest stable Node.js release
+    - lts/* #latest LTS Node.js release
+
+arch:
+   - amd64
+   - ppc64le   
 script: "npm run zuul"
 env:
   global:
